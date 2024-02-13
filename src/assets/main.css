@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-height{
+ height: calc(100vh - 5rem);
+}
+
+@screen sm{
+    .hero-height{
+        @apply h-screen;
+    }
+}
+
+#navbar .router-link-active{
+    @apply text-primary;
+}
+@screen sm{
+    #navbar .router-link-active{
+        @apply text-current  border-b-2 border-primary;
+    }
+}
